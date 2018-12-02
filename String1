@@ -1,0 +1,5 @@
+function reverseword(str){
+  let word= str.split(' ').reverse().join();
+  return word;
+}
+console.log(reverseword('Lorem Ipsum is simply dummy text of the printing and typesetting industry'));
