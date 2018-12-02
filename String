@@ -1,0 +1,11 @@
+# Answer-of-javaScript-Exercice
+Answers of algorithm JavaScript exercice
+
+Algorithm challenge
+
+ReverseWord
+function reverseword(str){
+  let word= str.split(' ').reverse().join();
+  return word;
+}
+console.log(reverseword('Lorem Ipsum is simply dummy text of the printing and typesetting industry'));
