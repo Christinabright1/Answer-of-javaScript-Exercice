@@ -1,0 +1,33 @@
+# Answer-of-javaScript-Exercice
+Answers of algorithm JavaScript exercice
+
+Define a function called ​encodeWord​ that receives a string and return the codified version of that string replacing the following characters:
+
+7 instead of T
+4 instead of A
+5 instead of S
+0 instead of O
+
+
+Answer
+
+
+function encodeChar(c) {
+  switch(c) {
+  case 'T':
+    return 7;
+  case 'A':
+    return 4;
+  case 'S':
+    return 5;
+  case 'O':
+    return 0;
+  default:
+    return c;
+  }
+}
+
+function encodeString(str) {
+  return str.toUpperCase().split('').map(encodeChar).join('');
+}
+document.write(encodeString("Lorem Ipsum is simply dummy text of the printing and typesetting industry. "));
