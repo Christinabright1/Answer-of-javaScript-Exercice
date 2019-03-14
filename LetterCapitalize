@@ -18,5 +18,5 @@ Output:"I Ran There"
 
 
 function capitalizeLetter(str){
-  return str.split(" ").map(x => x[0].toupperCase()+ x.slice(1)).join(" ");
+  return str.split(" ").map(x => x[0].toUpperCase()+ x.slice(1)).join(" ");
 }
