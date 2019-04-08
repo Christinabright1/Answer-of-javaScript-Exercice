@@ -1,0 +1,22 @@
+# Answer-of-javaScript-Exercice
+Algorithm Challenges in js
+
+
+function isVowel(c){
+  return (['a','e','i','o','u'].indexOf(c.toLowerCase(c)) !== -1);
+  
+}
+
+
+function isConsonant(c){
+  return !isVowel(c);
+}
+
+   function translate(str) {
+  return str
+  .split('')
+  .map(c => isConsonant(c) ? c+c : c)
+  .join('')
+}
+
+console.log(translate('Lorem Ipsum is simply dummy text of the printing and typesetting industry.'));
