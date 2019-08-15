@@ -1,0 +1,38 @@
+# Answer-of-javaScript-Exercice
+Algorithm Challenges in js
+
+
+// Code goes here
+
+//if username and password is correct i want a new feed
+let database= [
+      {
+       username: 'Christine',
+       password: 'superSecret'
+      }
+  ];
+  
+  
+  let newFeed= [
+       
+    {
+      userName: 'Sally',
+      timeLine: "Javascript is prety cool"
+    }
+    ];
+    
+    let userPromt= promp("Enter your userName");
+    
+    let   passwordPromt= promp("Enter your password");
+    
+    function signing(user, pass){
+      if(user=== database[0].username && pass === database[0].password){
+        console.log(newFeed);
+      }else{
+        console.log("Sorry, enter valid username and password");
+      }
+    }
+    
+    
+    
+    console.log(signing(userPromt, passwordPromt));
