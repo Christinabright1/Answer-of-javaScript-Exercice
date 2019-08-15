@@ -1,0 +1,61 @@
+
+# Answer-of-javaScript-Exercice
+Algorithm Challenges in js
+
+// Code goes here
+
+//create a array of object with the list of users and password
+
+let database= [
+    {
+      username:"Christine",
+      password: "1234"
+    },
+    {
+      username:"Sally",
+      password: "superSecret"
+    },
+    {
+      username:"Jonh",
+      password: "yes"
+    }
+  ];
+  
+  
+  let newFeeds = [
+      {
+        username: "Catia",
+        password: "Thisisname"
+      },
+      {
+        userName: "Bob",
+        password: "Smith"
+      }
+    ];
+    
+    //write a function to check if username and password is valid
+    
+    function isValid(user, pass){
+      //loop through each object in the array and find out if the user and password are valid
+      for(let i= 0; i < database.length; i++){
+        if(user === database[i].username && pass === database[i].password ){
+          
+          return true;
+        }
+      }
+      return false;
+    }
+
+function signing(user,pass){
+  if(isValid(user,pass)){
+    console.log(newFeeds);
+  }
+  else{
+    console.log("Enter a valid user and pass");
+  }
+}
+
+let userPromt= promp("Enter your username");
+let passPromt= promp("Enter your password");
+
+signing(userPromt, passPromt);
