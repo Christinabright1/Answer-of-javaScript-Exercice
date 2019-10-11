@@ -1,0 +1,13 @@
+# Answer-of-javaScript-Exercice
+Algorithm Challenges in js
+
+function formatDate(date){
+   let day= date.getDate();
+   let month= date.getMonth();
+   let year= date.getFullYear();
+   let currDate= day + ' '+ month + ' '+ year;
+
+   return currDate.toString().split(" ").join("/");
+}
+
+console.log(formatDate(new Date()));
