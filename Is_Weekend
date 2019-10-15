@@ -1,0 +1,10 @@
+# Answer-of-javaScript-Exercice
+Algorithm Challenges in js
+function compareTwoDate(date){
+  let objectDate= new Date(date);
+  let day= objectDate.getDay();
+  return (day === 6 ||
+   day ===0);
+}
+
+console.log(compareTwoDate('Nov 22, 2014'));
