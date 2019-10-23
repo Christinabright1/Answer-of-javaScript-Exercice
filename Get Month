@@ -1,0 +1,20 @@
+# Answer-of-javaScript-Exercice
+Algorithm Challenges in js
+
+Write a JavaScript function to get the month name from a particular date
+
+-Declare a variable and assign a list of month in the year
+-change date string into day object
+-get the index of the current month
+-use that index to get it value in monthNames which is an array
+
+function month_name(date){
+  let monthNames=["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+  let objectDate= new Date(date);
+   let indexofMonth= objectDate.getMonth();
+   return monthNames[indexofMonth];
+}
+
+console.log(month_name(new Date("10/11/2009"))); // October
