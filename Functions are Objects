@@ -1,0 +1,13 @@
+First class functions
+
+Everything you can do with other types you can with functions.
+
+Assign them to variables, pass around , create them on the fly.
+
+function greet(){
+  console.log("hi");
+}
+
+greet.language="English";
+console.log(greet.language);
+
