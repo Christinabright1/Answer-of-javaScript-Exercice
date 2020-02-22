@@ -1,0 +1,31 @@
+
+//create Element
+let li= document.createElement('li');
+
+//add className
+li.className= "collection-item";
+
+//add id
+li.id="new-item";
+//setAttribute
+li.setAttribute('title','new Item');
+//create textNode
+let txt= document.createTextNode("Hello");
+li.appendChild(txt);
+
+//create a new link
+let link= document.createElement('a');
+//add classes
+link.className='delete-item secondary-content';
+
+//create span
+let span= document.createElement("span");
+let close= document.createTextNode('X');
+span.appendChild(close);
+//add span html
+link.innerHTML= '<span id="spanElem">X</span>';
+
+//append link to li
+li.appendChild(link);
+//console.log(li);
+document.body.appendChild(li);
