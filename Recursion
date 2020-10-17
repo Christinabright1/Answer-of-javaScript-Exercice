@@ -1,0 +1,25 @@
+Replace Loops using Recursion
+
+Write a recursive function, sum(arr, n), that returns the sum of the first n elements of an array arr.
+
+
+/*Understand the problem
+  sum the first n elements of an array to create the sum of those element.
+  if i have array of 7 elements and set the first 3
+  it means that i will sum arr[0]+arr[1]+arr[2]
+ */
+//@parameter arr and n
+//@return number
+function sum(arr, n) {
+  // Only change code below this line
+ 
+  if( n <= 0){ // base case
+    return 0;
+  }else{
+ return sum(arr, n - 1) + arr[n - 1];
+  }
+
+  // Only change code above this line
+}
+
+//multiply the first n elements of an array to create the product of those elements
