@@ -1,0 +1,22 @@
+Write a JavaScript function to get a copy of the object where the keys have become the values and the values the keys.
+
+let person = {
+    firstName: 'John',
+    lastName: 'Doe'
+};
+
+function changeKeyintoValue(oldObj){
+  
+  let newObj= {};
+  for(oldkey in oldObj){
+    let oldValue = oldObj[oldkey];
+
+    // reverse key and value 
+    let newKey = oldValue;
+    let newValue= oldkey;
+    newObj[newKey] = newValue;
+  }
+         return  newObj;
+}
+
+changeKeyintoValue(person);
