@@ -1,0 +1,26 @@
+//a list node contains two items: the data and the pointer to the next node. 
+
+//Implementation list Node
+class LinkNode{
+  constructor(data){
+    this.data = data;
+    this.next = null;
+  }
+}
+//Implementation link Node
+
+class LinkList{
+  constructor(head = null){
+    this.head = head;
+  }
+}
+//create two list nodes, node1 and node2 and a pointer from node 1 to node 2.
+let node1 = new LinkNode(2);
+let node2 = new LinkNode(3);
+node1.next = node2;
+// Linked list
+let list1= new LinkList(node1);
+let list2 = new LinkList(node2);
+console.log(list1.head.data);
+console.log(list2.head.data);
+console.log(list1.head.next.data);
