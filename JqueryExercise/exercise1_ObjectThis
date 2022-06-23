@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+</head>
+<body>
+
+<p>Click, para me esconder.</p>
+<p>Click, a mim tamb�m!</p>
+<p>Click, e aqui tamb�m!</p>
+
+</body>
+</html>
