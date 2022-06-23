@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#p1").hover(function(){
+        alert("Pairou em p1!");
+    },
+    function(){
+        alert("Deixou p1");
+    }); 
+});
+</script>
+</head>
+<body>
+
+<p id="p1">Sou o par�grafo p1 - Paire sobre mim.</p>
+
+</body>
+</html>
