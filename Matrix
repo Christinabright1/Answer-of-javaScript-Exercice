@@ -1,0 +1,29 @@
+/*Create an algorithm that allows you to calculate the absolute value of the difference of the two diagonals of a square matrix.*/
+
+let firstDiagonal=function sumfirstDiagonal(arr){
+  let sum=0;
+  for(let i=0; i<arr.length; i++){
+    for(let j=0; j <arr.length; j++){
+      sum = arr[0][0]+arr[1][1]+arr[2][2];
+    }
+  }
+  return sum;
+}
+let secondDiagonal= function sumfirstDiagonal(newArr){
+  let sum1=0;
+  for(let x=0; x<newArr.length; x++){
+    for(let y=0; y <newArr.length; y++){
+      sum1 = newArr[2][0]+newArr[1][1]+newArr[0][2];
+    }
+  } 
+   return sum1;
+}
+
+function difference(arr){
+  return firstDiagonal(arr)- secondDiagonal(arr);
+}
+
+//firstDiagonal([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+//secondDiagonal([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+
+console.log(difference([[1, 2, 3], [4, 5, 6], [7, 8, 9]]));
